@@ -1,27 +1,4 @@
-URL: /
-Timestamp: Mon Sep 25 2023 18:06:50 GMT+0200 (Mitteleuropäische Sommerzeit)
-
-URL: /favicon.ico
-Timestamp: Mon Sep 25 2023 18:06:50 GMT+0200 (Mitteleuropäische Sommerzeit)
-
-URL: /documentation
-Timestamp: Mon Sep 25 2023 18:07:11 GMT+0200 (Mitteleuropäische Sommerzeit)
-
-URL: /sdhfjjfd
-Timestamp: Mon Sep 25 2023 18:07:28 GMT+0200 (Mitteleuropäische Sommerzeit)
-
-URL: /
-Timestamp: Tue Sep 26 2023 14:39:00 GMT+0200 (Mitteleuropäische Sommerzeit)
-
-URL: /favicon.ico
-Timestamp: Tue Sep 26 2023 14:39:00 GMT+0200 (Mitteleuropäische Sommerzeit)
-
-URL: /documentation
-Timestamp: Tue Sep 26 2023 14:39:21 GMT+0200 (Mitteleuropäische Sommerzeit)
-
-URL: /
-Timestamp: Tue Sep 26 2023 16:33:50 GMT+0200 (Mitteleuropäische Sommerzeit)
-
-URL: /documentation
-Timestamp: Tue Sep 26 2023 16:33:56 GMT+0200 (Mitteleuropäische Sommerzeit)
-
+::ffff:127.0.0.1 - - [30/Sep/2023:00:45:51 +0000] "GET / HTTP/1.1" 200 18 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/118.0"
+::ffff:127.0.0.1 - - [30/Sep/2023:00:46:00 +0000] "GET /documentation HTTP/1.1" 404 152 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/118.0"
+::ffff:127.0.0.1 - - [30/Sep/2023:00:46:20 +0000] "GET /documentation.html HTTP/1.1" 200 759 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/118.0"
+::ffff:127.0.0.1 - - [30/Sep/2023:00:47:11 +0000] "GET /movies HTTP/1.1" 200 582 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/118.0"

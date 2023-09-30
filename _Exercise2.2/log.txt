@@ -1,6 +1,0 @@
-URL: /
-Timestamp: Tue Sep 26 2023 19:16:47 GMT+0200 (Mitteleuropäische Sommerzeit)
-
-URL: /documentation
-Timestamp: Tue Sep 26 2023 19:16:52 GMT+0200 (Mitteleuropäische Sommerzeit)
-
