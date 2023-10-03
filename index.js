@@ -1,8 +1,12 @@
+// Import modules
 const express = require('express'),
   morgan = require('morgan'),
   // import built in node modules fs and path 
   fs = require('fs'), 
-  path = require('path');
+  path = require('path'),
+  // import body-parser & uuid
+  bodyParser = require('body-parser'),
+  uuid = require('uuid');
 
 const app = express();
 
@@ -60,13 +64,55 @@ let topMovies = [
   },
 ];
 
-// GET requests
+// Return Welcome Page
+app.get('/', (req, res) => {
+  res.send('Welcome to myFlix!');
+});
+
+// Return a list of ALL movies
 app.get('/movies', (req, res) => {
   res.json(topMovies);
 });
 
-app.get('/', (req, res) => {
-  res.send('Welcome to myFlix!');
+// Return data about a single movie by title
+app.get('/movies/:title', (req, res) => {
+  res.json(topMovies.find((movie) =>
+  { return movie.title === req.params.title}));
+});
+
+// Return data about a genre by name
+app.get('movies/genres/:genreName', (req, res) => {
+  res.send('A JSON object holding data about a genre containing name and description properties.');
+});
+
+// Return data about a director by director's name
+app.get('movies/directors/:directorName', (req, res) => {
+  res.send('A JSON object holding data about a director containing name, bio, birth year, and death year properties.');
+});
+
+// Allow new users to register
+app.post('/users', (req, res) => {
+  res.send('A JSON object holding user data containing id, username, password, email, and birthday properties and an array for placing favourite movies.');
+});
+
+// Allow users to update their user info
+app.put('/users/:username', (req, res) => {
+  res.send('A JSON object holding updated user data containing id, username, password, email, and birthday properties and an array for placing favourite movies.');
+});
+
+// Allow users to add a movie to their list of favourites
+app.post('/users/:username/movies/:title', (req, res) => {
+  res.send('A JSON object holding updated user data containing id, username, password, email, and birthday properties and an array for placing favourite movies.');
+});
+
+// Allow users to remove a movie from their list of favourites
+app.delete('/users/:username/movies/:title', (req, res) => {
+  res.send('A JSON object holding updated user data containing id, username, password, email, and birthday properties and an array for placing favourite movies.');
+});
+
+// Allow existing users to deregister
+app.delete('/users/:username', (req, res) => {
+  res.send('A text message indicating whether a user was successfully removed.');
 });
 
 // Error Handling

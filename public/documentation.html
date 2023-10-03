@@ -5,7 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device.width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;900&family=Syne:wght@700&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>DOCUMENTATION</title>
@@ -19,6 +23,83 @@
             access to information about different movies, directors, and genres. Users will be able to sign up, update
             their personal information, and create a list of their favorite movies.</p>
     </div>
+    <table>
+        <thead>
+            <tr>
+                <td><h4>Business Logic</h4></td>
+                <td><h4>URL</h4></td>
+                <td><h4>HTTP Method</h4></td>
+                <td><h4>Request body data format</h4></td>
+                <td><h4>Response body data format</h4></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><br></tr>
+            <tr>
+                <td>Return a list of ALL movies</td>
+                <td>/movies</td>
+                <td>GET</td>
+                <td>None</td>
+                <td>A JSON object holding an array with all movies.</td>
+            </tr>
+            <tr>
+                <td>Return data about a single movie by title</td>
+                <td>/movies/:title</td>
+                <td>GET</td>
+                <td>None</td>
+                <td>A JSON object holding data about a single movie containing description, genre, director, image URL, and whether it's featured or not properties.</td>
+            </tr>
+            <tr>
+                <td>Return data about a genre by name</td>
+                <td>movies/genres/:genreName</td>
+                <td>GET</td>
+                <td>None</td>
+                <td>A JSON object holding data about a genre containing name and description properties.</td>
+            </tr>
+            <tr>
+                <td>Return data about a director by director's name</td>
+                <td>movies/directors/:directorName</td>
+                <td>GET</td>
+                <td>None</td>
+                <td>A JSON object holding data about a director containing name, bio, birth year, and death year properties.</td>
+            </tr>
+            <tr>
+                <td>Allow new users to register</td>
+                <td>/users</td>
+                <td>POST</td>
+                <td>A JSON object holding user data containing username, password, email, and birthday properties.</td>
+                <td>A JSON object holding user data containing id, username, password, email, and birthday properties and an array for placing favourite movies.</td>
+            </tr>
+            <tr>
+                <td>Allow users to update their user info</td>
+                <td>/users/:username</td>
+                <td>PUT</td>
+                <td>A JSON object holding the user info that should be changed. It should contain at least one of the following key/value pairs: Username/String, Password/String, Email/String, and/or Birthday/Numbers.</td>
+                <td>A JSON object holding updated user data containing id, username, password, email, and birthday properties and an array for placing favourite movies.</td>
+            </tr>
+            <tr>
+                <td>Allow users to add a movie to their list of favourites</td>
+                <td>/users/:username/movies/:title</td>
+                <td>POST</td>
+                <td>None</td>
+                <td>A JSON object holding updated user data containing id, username, password, email, and birthday properties and an array for placing favourite movies.</td>
+            </tr>
+            <tr>
+                <td>Allow users to remove a movie from their list of favourites</td>
+                <td>/users/:username/movies/:title</td>
+                <td>DELETE</td>
+                <td>None</td>
+                <td>A JSON object holding updated user data containing id, username, password, email, and birthday properties and an array for placing favourite movies.</td>
+            </tr>
+            <tr>
+                <td>Allow existing users to deregister</td>
+                <td>/users/:username</td>
+                <td>DELETE</td>
+                <td>None</td>
+                <td>A text message indicating whether a user was successfully removed.</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>

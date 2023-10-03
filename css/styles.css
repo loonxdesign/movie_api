@@ -1,0 +1,23 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 200;
+}
+
+h1,
+h4 {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+td {
+    padding: 10px 20px;
+}
