@@ -82,12 +82,12 @@ app.get('/movies/:title', (req, res) => {
 
 // Return data about a genre by name
 app.get('movies/genres/:genreName', (req, res) => {
-  res.send('A JSON object holding data about a genre containing name and description properties.');
+  res.send('A JSON object holding data about a genre containing ID, name and description properties.');
 });
 
 // Return data about a director by director's name
 app.get('movies/directors/:directorName', (req, res) => {
-  res.send('A JSON object holding data about a director containing name, bio, birth year, and death year properties.');
+  res.send('A JSON object holding data about a director containing ID, name, bio, birth year, and death year properties.');
 });
 
 // Allow new users to register
