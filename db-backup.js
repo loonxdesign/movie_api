@@ -32,7 +32,7 @@ var movie1 = {
 };
 
 db.movies.insertOne(movie1);
-// MOVIE1 ObjectId("6526a6c5fc1510ad0e54c535")
+// MOVIE1 ObjectId("652d3d6f6e015ed0a7bda12d")
 
 var movie2 = {
   Title: 'Castle in the Sky',
@@ -190,7 +190,7 @@ var movie6 = {
     },
   ],
   Director: {
-    Name: 'Hayao Miyazaki ',
+    Name: 'Hayao Miyazaki',
     Bio: 'Hayao Miyazaki is a Japanese animator, filmmaker, and manga artist. A co-founder of Studio Ghibli, he has attained international acclaim as a masterful storyteller and creator of Japanese animated feature films, and is widely regarded as one of the most accomplished filmmakers in the history of animation.',
     Birth: '1941',
   },
@@ -198,7 +198,7 @@ var movie6 = {
 };
 
 db.movies.insertOne(movie6);
-// MOVIE6 ObjectId("6526a7ccfc1510ad0e54c53a")
+// MOVIE6 ObjectId("652d42e86e015ed0a7bda12e")
 
 var movie7 = {
   Title: 'Whisper of the Heart',
@@ -257,7 +257,7 @@ var movie8 = {
     },
   ],
   Director: {
-    Name: 'Hayao Miyazaki ',
+    Name: 'Hayao Miyazaki',
     Bio: 'Hayao Miyazaki is a Japanese animator, filmmaker, and manga artist. A co-founder of Studio Ghibli, he has attained international acclaim as a masterful storyteller and creator of Japanese animated feature films, and is widely regarded as one of the most accomplished filmmakers in the history of animation.',
     Birth: '1941',
   },
@@ -265,7 +265,7 @@ var movie8 = {
 };
 
 db.movies.insertOne(movie8);
-// MOVIE8 ObjectId("6526a80bfc1510ad0e54c53c")
+// MOVIE8 ObjectId("652d434f6e015ed0a7bda12f")
 
 var movie9 = {
   Title: 'Spirited Away',
@@ -290,15 +290,15 @@ var movie9 = {
     },
   ],
   Director: {
-    Name: 'Hayao Miyazaki ',
+    Name: 'Hayao Miyazaki',
     Bio: 'Hayao Miyazaki is a Japanese animator, filmmaker, and manga artist. A co-founder of Studio Ghibli, he has attained international acclaim as a masterful storyteller and creator of Japanese animated feature films, and is widely regarded as one of the most accomplished filmmakers in the history of animation.',
     Birth: '1941',
   },
-  ImagePath: '',
+  ImagePath: 'Spirited_Away_Japanese_poster.png',
 };
 
 db.movies.insertOne(movie9);
-// MOVIE9 ObjectId("6526a82dfc1510ad0e54c53d")
+// MOVIE9 ObjectId("652d44376e015ed0a7bda131")
 
 var movie10 = {
   Title: "Howl's Moving Castle",
@@ -323,7 +323,7 @@ var movie10 = {
     },
   ],
   Director: {
-    Name: 'Hayao Miyazaki ',
+    Name: 'Hayao Miyazaki',
     Bio: 'Hayao Miyazaki is a Japanese animator, filmmaker, and manga artist. A co-founder of Studio Ghibli, he has attained international acclaim as a masterful storyteller and creator of Japanese animated feature films, and is widely regarded as one of the most accomplished filmmakers in the history of animation.',
     Birth: '1941',
   },
@@ -331,7 +331,7 @@ var movie10 = {
 };
 
 db.movies.insertOne(movie10);
-// MOVIE10 ObjectId("6526a847fc1510ad0e54c53e")
+// MOVIE10 ObjectId("652d44906e015ed0a7bda132")
 
 var movie11 = {
   Title: 'From Up on Poppy Hill',
@@ -449,7 +449,7 @@ db.users.updateOne(
 // USER5 ObjectId("6526ab94fc1510ad0e54c544")
 
 
-Bio: 'Hayao Miyazak is a Japanese manga artist and prominent film director and animator of many popular anime feature films. Through a career that has spanned nearly five decades, Miyazaki has attained international acclaim as a maker of animated feature films and, along with Isao Takahata, co-founded Studio Ghibli, an animation studio and production company. The success of Miyazaki\'s films has invited comparisons with American animator Walt Disney, British animator Nick Park as well as Robert Zemeckis, who pioneered Motion Capture animation, and he has been named one of the most influential people by Time Magazine.
+db.movies.updateMany({'Director.Name': 'Hayao Miyazaki'}, {$set:{'Director.Bio': 'Hayao Miyazak is a Japanese manga artist and prominent film director and animator of many popular anime feature films. Through a career that has spanned nearly five decades, Miyazaki has attained international acclaim as a maker of animated feature films and, along with Isao Takahata, co-founded Studio Ghibli, an animation studio and production company. The success of Miyazaki\'s films has invited comparisons with American animator Walt Disney, British animator Nick Park as well as Robert Zemeckis, who pioneered Motion Capture animation, and he has been named one of the most influential people by Time Magazine.'}})
 
 mongoexport -d test -c movies -o movies.json
 
