@@ -36,32 +36,53 @@
         <tbody>
             <tr><br></tr>
             <tr>
-                <td>Return a list of ALL movies</td>
+                <td>Get ALL movies</td>
                 <td>/movies</td>
                 <td>GET</td>
                 <td>None</td>
                 <td>A JSON object holding an array with all movies.</td>
             </tr>
             <tr>
-                <td>Return data about a single movie by title</td>
-                <td>/movies/:title</td>
+                <td>Get movie by title</td>
+                <td>/movies/:Title</td>
                 <td>GET</td>
                 <td>None</td>
-                <td>A JSON object holding data about a single movie containing ID, description, genre, director, image URL, and whether it's featured or not properties.</td>
+                <td>A JSON object holding data about a single movie containing ID, title, year, description, genres, director, and image URL.</td>
             </tr>
             <tr>
-                <td>Return data about a genre by name</td>
-                <td>movies/genres/:genreName</td>
+                <td>Get movies by genre name</td>
+                <td>movies/Genres/:GenresName</td>
                 <td>GET</td>
                 <td>None</td>
-                <td>A JSON object holding data about a genre containing ID, name and description properties.</td>
+                <td>JSON object showing data for all movies that share a genre type.</td>
             </tr>
             <tr>
-                <td>Return data about a director by director's name</td>
-                <td>movies/directors/:directorName</td>
+                <td>Get movies by director name</td>
+                <td>movies/Director/:DirectorName</td>
                 <td>GET</td>
                 <td>None</td>
-                <td>A JSON object holding data about a director containing ID, name, bio, birth year, and death year properties.</td>
+                <td>JSON object showing data for all movies that share a director.</td>
+            </tr>
+            <tr>
+                <td>Get data about a director by name</td>
+                <td>movies/Director/:DirectorName</td>
+                <td>GET</td>
+                <td>None</td>
+                <td>A JSON object holding data about a director containing name, bio, birth year, and death year properties.</td>
+            </tr>
+            <tr>
+                <td>Get all users</td>
+                <td>/users</td>
+                <td>GET</td>
+                <td>None</td>
+                <td>A JSON object holding an array with all users.</td>
+            </tr>
+            <tr>
+                <td>Get a user by username</td>
+                <td>/users/:Username</td>
+                <td>GET</td>
+                <td>None</td>
+                <td>A JSON object holding user data containing id, username, password, email, and birthday properties and an array for placing favourite movies.</td>
             </tr>
             <tr>
                 <td>Allow new users to register</td>
@@ -71,29 +92,29 @@
                 <td>A JSON object holding user data containing id, username, password, email, and birthday properties and an array for placing favourite movies.</td>
             </tr>
             <tr>
-                <td>Allow users to update their user info</td>
-                <td>/users/:username</td>
+                <td>Update a user's info, by username</td>
+                <td>/users/:Username</td>
                 <td>PUT</td>
-                <td>A JSON object holding the user info that should be changed. It should contain at least one of the following key/value pairs: Username/String, Password/String, Email/String, and/or Birthday/Numbers.</td>
+                <td>A JSON object holding the user info that should be changed. It should contain at least one of the following key/value pairs: Username/String, Password/String, Email/String, and/or Birthday/Date.</td>
                 <td>A JSON object holding updated user data containing id, username, password, email, and birthday properties and an array for placing favourite movies.</td>
             </tr>
             <tr>
-                <td>Allow users to add a movie to their list of favourites</td>
-                <td>/users/:username/movies/:title</td>
+                <td>Add a movie to a user's list of favorites</td>
+                <td>/users/:Username/movies/:MovieID</td>
                 <td>POST</td>
                 <td>None</td>
                 <td>A JSON object holding updated user data containing id, username, password, email, and birthday properties and an array for placing favourite movies.</td>
             </tr>
             <tr>
                 <td>Allow users to remove a movie from their list of favourites</td>
-                <td>/users/:username/movies/:title</td>
+                <td>/users/:Username/movies/:MovieID</td>
                 <td>DELETE</td>
                 <td>None</td>
                 <td>A JSON object holding updated user data containing id, username, password, email, and birthday properties and an array for placing favourite movies.</td>
             </tr>
             <tr>
-                <td>Allow existing users to deregister</td>
-                <td>/users/:username</td>
+                <td>Delete a user by username</td>
+                <td>/users/:Username</td>
                 <td>DELETE</td>
                 <td>None</td>
                 <td>A text message indicating whether a user was successfully removed.</td>
