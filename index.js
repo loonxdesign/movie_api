@@ -69,8 +69,8 @@ app.get('/movies/:Title', async (req, res) => {
 });
 
 // Get movies by genre name
-app.get('movies/Genres/:GenresName', async (req, res) => {
-  await Movies.find({ 'Genres.Name': req.params.Genres })
+app.get('/movies/genres/:genresName', async (req, res) => {
+  await Movies.find({'Genres.Name': req.params.Genres})
     .then((movies) => {
       if (movies.length == 0) {
         return res
@@ -91,8 +91,8 @@ app.get('movies/Genres/:GenresName', async (req, res) => {
 });
 
 // Get movies by director name
-app.get('movies/Director/:DirectorName', async (req, res) => {
-  await Movies.find({ 'Director.Name': req.params.Director })
+app.get('/movies/director/:directorName', async (req, res) => {
+  await Movies.find({'Director.Name': req.params.Director })
     .then((movies) => {
       if (movies.length == 0) {
         return res
@@ -113,8 +113,8 @@ app.get('movies/Director/:DirectorName', async (req, res) => {
 });
 
 // Get data about a director by name
-app.get('movies/Director/:DirectorName', async (req, res) => {
-  await Movies.findOne({ 'Director.Name': req.params.Director })
+app.get('/movies/director/:DirectorName', async (req, res) => {
+  await Movies.findOne({'Director.Name': req.params.Director })
     .then((movies) => {
       if (!movies) {
         return res
@@ -230,8 +230,8 @@ app.post('/users/:Username/movies/:MovieID', async (req, res) => {
     });
 });
 
-// Allow users to remove a movie from their list of favourites
-app.delete('/users/:Username/movies/:title', async (req, res) => {
+// Remove a movie from their list of favourites
+app.delete('/users/:Username/movies/:MovieID', async (req, res) => {
   await Users.findOneAndUpdate(
     { Username: req.params.Username },
     {
