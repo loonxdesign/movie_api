@@ -16,3 +16,7 @@
 ::1 - - [03/Oct/2023:19:08:35 +0000] "POST /users/Username/movies/Title HTTP/1.1" 200 148 "-" "PostmanRuntime/7.33.0"
 ::1 - - [03/Oct/2023:19:09:34 +0000] "DELETE /users/Username/movies/Title HTTP/1.1" 200 148 "-" "PostmanRuntime/7.33.0"
 ::1 - - [03/Oct/2023:19:10:36 +0000] "DELETE /users/Username HTTP/1.1" 200 66 "-" "PostmanRuntime/7.33.0"
+::ffff:127.0.0.1 - - [20/Oct/2023:14:37:13 +0000] "GET / HTTP/1.1" 200 18 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/118.0"
+::ffff:127.0.0.1 - - [20/Oct/2023:14:37:13 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/118.0"
+::1 - - [20/Oct/2023:14:38:24 +0000] "GET / HTTP/1.1" 200 18 "-" "PostmanRuntime/7.33.0"
+::1 - - [20/Oct/2023:14:38:44 +0000] "GET /movies HTTP/1.1" 201 21736 "-" "PostmanRuntime/7.33.0"
