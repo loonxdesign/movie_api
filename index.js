@@ -22,6 +22,10 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+let auth = require('./auth')(app);
+const passport = require('passport');
+require('./passport');
+
 // a ‘log.txt’ file is created in root directory
 const accessLogStream = fs.createWriteStream(path.join(__dirname, 'log.txt'), {
   flags: 'a',
@@ -70,7 +74,7 @@ app.get('/movies/:Title', async (req, res) => {
 
 // Get movies by genre name
 app.get('/movies/genres/:genresName', async (req, res) => {
-  await Movies.find({'Genres.Name': req.params.Genres})
+  await Movies.find({'Genres.Name': req.params.genresName})
     .then((movies) => {
       if (movies.length == 0) {
         return res
@@ -92,7 +96,7 @@ app.get('/movies/genres/:genresName', async (req, res) => {
 
 // Get movies by director name
 app.get('/movies/director/:directorName', async (req, res) => {
-  await Movies.find({'Director.Name': req.params.Director })
+  await Movies.find({'Director.Name': req.params.directorName})
     .then((movies) => {
       if (movies.length == 0) {
         return res
@@ -113,13 +117,13 @@ app.get('/movies/director/:directorName', async (req, res) => {
 });
 
 // Get data about a director by name
-app.get('/movies/director/:DirectorName', async (req, res) => {
-  await Movies.findOne({'Director.Name': req.params.Director })
+app.get('/directors/:directorName', async (req, res) => {
+  await Movies.findOne({'Director.Name': req.params.directorName})
     .then((movies) => {
       if (!movies) {
         return res
           .status(404)
-          .send('Error: ' + req.params.Director + ' was not found.');
+          .send('Error: ' + req.params.directorName + ' was not found.');
       } else {
         res.status(200).json(movies.Director);
       }
