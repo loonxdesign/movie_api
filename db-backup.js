@@ -454,3 +454,6 @@ db.movies.updateMany({'Director.Name': 'Hayao Miyazaki'}, {$set:{'Director.Bio':
 mongoexport -d test -c movies -o movies.json
 
 mongoexport -d test -c users -o users.json
+
+mongoimport --uri mongodb+srv://ghib-lixAdmin:*7Daisuki7*@cluster0.eioacvm.mongodb.net/ghib-lixDB --collection movies --type json --file movies.json
+mongoimport --uri mongodb+srv://ghib-lixAdmin:*7Daisuki7*@cluster0.eioacvm.mongodb.net/ghib-lixDB --collection users --type json --file users.json
