@@ -53,8 +53,6 @@ app.use(
   })
 );
 
-/* rest of code goes here*/
-
 let auth = require('./auth')(app);
 const passport = require('passport');
 require('./passport');
