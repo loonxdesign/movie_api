@@ -1,181 +1,180 @@
-[
-    {
-        "_id": {"$oid":"6526a72efc1510ad0e54c536"},
-        "Title": "Castle in the Sky",
-        "Year": "1986",
-        "Description": "A young boy and a girl with a magic crystal must race against pirates and foreign agents in a search for a legendary floating castle.",
-        "Genres": {
-            "Name": "Animation, Adventure, Family",
-            "Description": "This movie combines elements of animation, adventure, and family genres. Animation involves creating moving images through various techniques. Adventure films often feature epic journeys and significant obstacles. Family films are designed to appeal to a wide range of ages and often contain elements suitable for younger viewers."
-        },
-        "Director": {
-            "Name": "Hayao Miyazaki",
-            "Bio": "Hayao Miyazak is a Japanese manga artist and prominent film director and animator of many popular anime feature films. Through a career that has spanned nearly five decades, Miyazaki has attained international acclaim as a maker of animated feature films and, along with Isao Takahata, co-founded Studio Ghibli, an animation studio and production company. The success of Miyazaki's films has invited comparisons with American animator Walt Disney, British animator Nick Park as well as Robert Zemeckis, who pioneered Motion Capture animation, and he has been named one of the most influential people by Time Magazine.",
-            "Birth": "1941"
-        },
-        "ImagePath": "Castle_in_the_Sky_(1986).png"
+
+{
+    "_id": {"$oid":"6526a72efc1510ad0e54c536"},
+    "Title": "Castle in the Sky",
+    "Year": "1986",
+    "Description": "A young boy and a girl with a magic crystal must race against pirates and foreign agents in a search for a legendary floating castle.",
+    "Genres": {
+        "Name": "Animation, Adventure, Family",
+        "Description": "This movie combines elements of animation, adventure, and family genres. Animation involves creating moving images through various techniques. Adventure films often feature epic journeys and significant obstacles. Family films are designed to appeal to a wide range of ages and often contain elements suitable for younger viewers."
     },
-    {
-        "_id": {"$oid":"6526a752fc1510ad0e54c537"},
-        "Title": "My Neighbor Totoro",
-        "Year": "1988",
-        "Description": "When two girls move to the country to be near their ailing mother, they have adventures with the wondrous forest spirits who live nearby.",
-        "Genres": {
-            "Name": "Animation, Comedy, Family",
-            "Description": "This movie combines elements of animation, comedy, and family genres. Animation involves creating moving images through various techniques. Comedy films are designed to make the audience laugh and often have a happy ending. Family films are designed to appeal to a wide range of ages and often contain elements suitable for younger viewers."
-        },
-        "Director": {
-            "Name": "Hayao Miyazaki",
-            "Bio": "Hayao Miyazak is a Japanese manga artist and prominent film director and animator of many popular anime feature films. Through a career that has spanned nearly five decades, Miyazaki has attained international acclaim as a maker of animated feature films and, along with Isao Takahata, co-founded Studio Ghibli, an animation studio and production company. The success of Miyazaki's films has invited comparisons with American animator Walt Disney, British animator Nick Park as well as Robert Zemeckis, who pioneered Motion Capture animation, and he has been named one of the most influential people by Time Magazine.",
-            "Birth": "1941"
-        },
-        "ImagePath": "My_Neighbor_Totoro_-_Tonari_no_Totoro_(Movie_Poster).jpg"
+    "Director": {
+        "Name": "Hayao Miyazaki",
+        "Bio": "Hayao Miyazak is a Japanese manga artist and prominent film director and animator of many popular anime feature films. Through a career that has spanned nearly five decades, Miyazaki has attained international acclaim as a maker of animated feature films and, along with Isao Takahata, co-founded Studio Ghibli, an animation studio and production company. The success of Miyazaki's films has invited comparisons with American animator Walt Disney, British animator Nick Park as well as Robert Zemeckis, who pioneered Motion Capture animation, and he has been named one of the most influential people by Time Magazine.",
+        "Birth": "1941"
     },
-    {
-        "_id": {"$oid":"6526a773fc1510ad0e54c538"},
-        "Title": "Kiki's Delivery Service",
-        "Year": "1989",
-        "Description": "A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.",
-        "Genres": {
-            "Name": "Animation, Fantasy, Family",
-            "Description": "This movie combines elements of animation, fantasy, and family genres. Animation involves creating moving images through various techniques. Fantasy films often feature magical and supernatural elements. Family films are designed to appeal to a wide range of ages and often contain elements suitable for younger viewers."
-        },
-        "Director": {
-            "Name": "Hayao Miyazaki",
-            "Bio": "Hayao Miyazak is a Japanese manga artist and prominent film director and animator of many popular anime feature films. Through a career that has spanned nearly five decades, Miyazaki has attained international acclaim as a maker of animated feature films and, along with Isao Takahata, co-founded Studio Ghibli, an animation studio and production company. The success of Miyazaki's films has invited comparisons with American animator Walt Disney, British animator Nick Park as well as Robert Zemeckis, who pioneered Motion Capture animation, and he has been named one of the most influential people by Time Magazine.",
-            "Birth": "1941"
-        },
-        "ImagePath": "Kiki's_Delivery_Service_(Movie).jpg"
+    "ImagePath": "Castle_in_the_Sky_(1986).png"
+}
+{
+    "_id": {"$oid":"6526a752fc1510ad0e54c537"},
+    "Title": "My Neighbor Totoro",
+    "Year": "1988",
+    "Description": "When two girls move to the country to be near their ailing mother, they have adventures with the wondrous forest spirits who live nearby.",
+    "Genres": {
+        "Name": "Animation, Comedy, Family",
+        "Description": "This movie combines elements of animation, comedy, and family genres. Animation involves creating moving images through various techniques. Comedy films are designed to make the audience laugh and often have a happy ending. Family films are designed to appeal to a wide range of ages and often contain elements suitable for younger viewers."
     },
-    {
-        "_id": {"$oid":"6526a7bafc1510ad0e54c539"},
-        "Title": "Only Yesterday",
-        "Year": "1991",
-        "Description": "A twenty-seven-year-old office worker travels to the countryside while reminiscing about her childhood in Tokyo.",
-        "Genres": {
-            "Name": "Animation, Drama, Romance",
-            "Description": "This movie combines elements of animation, drama, and romance genres. Animation involves creating moving images through various techniques. Drama films focus on emotional and relational development. Romance films explore the theme of love between protagonists."
-        },
-        "Director": {
-            "Name": "Isao Takahata",
-            "Bio": "Isao Takahata was a Japanese director, screenwriter and producer. A co-founder of Studio Ghibli, he earned international critical acclaim for his work as a director of Japanese animated feature films.",
-            "Birth": "1935",
-            "Death": "2018"
-        },
-        "ImagePath": "OYpost.jpg"
+    "Director": {
+        "Name": "Hayao Miyazaki",
+        "Bio": "Hayao Miyazak is a Japanese manga artist and prominent film director and animator of many popular anime feature films. Through a career that has spanned nearly five decades, Miyazaki has attained international acclaim as a maker of animated feature films and, along with Isao Takahata, co-founded Studio Ghibli, an animation studio and production company. The success of Miyazaki's films has invited comparisons with American animator Walt Disney, British animator Nick Park as well as Robert Zemeckis, who pioneered Motion Capture animation, and he has been named one of the most influential people by Time Magazine.",
+        "Birth": "1941"
     },
-    {
-        "_id": {"$oid":"6526a7f4fc1510ad0e54c53b"},
-        "Title": "Whisper of the Heart",
-        "Year": "1995",
-        "Description": "A love story between a girl who loves reading books, and a boy who has previously checked out all of the library books she chooses.",
-        "Genres": {
-            "Name": "Animation, Drama, Family",
-            "Description": "This movie combines elements of animation, drama, and family genres. Animation involves creating moving images through various techniques. Drama films focus on emotional and relational development. Family films are designed to appeal to a wide range of ages and often contain elements suitable for younger viewers."
-        },
-        "Director": {
-            "Name": "Yoshifumi Kondō",
-            "Bio": "Yoshifumi Kondō was a Japanese animator who worked for Studio Ghibli in his last years.",
-            "Birth": "1950",
-            "Death": "1998"
-        },
-        "ImagePath": "Whisper_of_the_Heart_(Movie_Poster).jpg"
+    "ImagePath": "My_Neighbor_Totoro_-_Tonari_no_Totoro_(Movie_Poster).jpg"
+}
+{
+    "_id": {"$oid":"6526a773fc1510ad0e54c538"},
+    "Title": "Kiki's Delivery Service",
+    "Year": "1989",
+    "Description": "A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.",
+    "Genres": {
+        "Name": "Animation, Fantasy, Family",
+        "Description": "This movie combines elements of animation, fantasy, and family genres. Animation involves creating moving images through various techniques. Fantasy films often feature magical and supernatural elements. Family films are designed to appeal to a wide range of ages and often contain elements suitable for younger viewers."
     },
-    {
-        "_id": {"$oid":"6526a85ffc1510ad0e54c53f"},
-        "Title": "From Up on Poppy Hill",
-        "Year": "2011",
-        "Description": "A group of Yokohama teens look to save their school's clubhouse from the wrecking ball in preparations for the 1964 Tokyo Olympics.",
-        "Genres": {
-            "Name": "Animation, Comedy, Drama",
-            "Description": "This movie combines elements of animation, comedy, and drama genres. Animation involves creating moving images through various techniques. Comedy films are designed to make the audience laugh. Drama films focus on emotional and relational development."
-        },
-        "Director": {
-            "Name": "Gorō Miyazaki",
-            "Bio": "Goro Miyazaki is a Japanese director. He is the son of animator and film director Hayao Miyazaki, who is one of the co-founders of Studio Ghibli. Described as \"reluctant\" to follow his father's career, Goro initially worked as a landscaper for many years before entering the film business.",
-            "Birth": "1967"
-        },
-        "ImagePath": "From_Up_on_Poppy_Hill.png"
+    "Director": {
+        "Name": "Hayao Miyazaki",
+        "Bio": "Hayao Miyazak is a Japanese manga artist and prominent film director and animator of many popular anime feature films. Through a career that has spanned nearly five decades, Miyazaki has attained international acclaim as a maker of animated feature films and, along with Isao Takahata, co-founded Studio Ghibli, an animation studio and production company. The success of Miyazaki's films has invited comparisons with American animator Walt Disney, British animator Nick Park as well as Robert Zemeckis, who pioneered Motion Capture animation, and he has been named one of the most influential people by Time Magazine.",
+        "Birth": "1941"
     },
-    {
-        "_id": {"$oid":"652d3d6f6e015ed0a7bda12d"},
-        "Title": "Nausicaä of the Valley of the Wind",
-        "Year": "1984",
-        "Description": "Warrior and pacifist Princess Nausicaä desperately struggles to prevent two warring nations from destroying themselves and their dying planet.",
-        "Genres": {
-            "Name": "Animation, Adventure, Sci-Fi",
-            "Description": "This movie combines elements of animation, adventure, and science fiction genres. Animation involves creating moving images through various techniques. Adventure films often feature epic journeys. Science fiction typically deals with imaginative and futuristic concepts."
-        },
-        "Director": {
-            "Name": "Hayao Miyazaki",
-            "Bio": "Hayao Miyazak is a Japanese manga artist and prominent film director and animator of many popular anime feature films. Through a career that has spanned nearly five decades, Miyazaki has attained international acclaim as a maker of animated feature films and, along with Isao Takahata, co-founded Studio Ghibli, an animation studio and production company. The success of Miyazaki's films has invited comparisons with American animator Walt Disney, British animator Nick Park as well as Robert Zemeckis, who pioneered Motion Capture animation, and he has been named one of the most influential people by Time Magazine.",
-            "Birth": "1941"
-        },
-        "ImagePath": "Nausicaaposter.jpg"
+    "ImagePath": "Kiki's_Delivery_Service_(Movie).jpg"
+}
+{
+    "_id": {"$oid":"6526a7bafc1510ad0e54c539"},
+    "Title": "Only Yesterday",
+    "Year": "1991",
+    "Description": "A twenty-seven-year-old office worker travels to the countryside while reminiscing about her childhood in Tokyo.",
+    "Genres": {
+        "Name": "Animation, Drama, Romance",
+        "Description": "This movie combines elements of animation, drama, and romance genres. Animation involves creating moving images through various techniques. Drama films focus on emotional and relational development. Romance films explore the theme of love between protagonists."
     },
-    {
-        "_id": {"$oid":"652d42e86e015ed0a7bda12e"},
-        "Title": "Porco Rosso",
-        "Year": "1992",
-        "Description": "In 1930s Italy, a veteran World War I pilot is cursed to look like an anthropomorphic pig.",
-        "Genres": {
-            "Name": "Animation, Adventure, Comedy",
-            "Description": "This movie combines elements of animation, adventure, and comedy genres. Animation involves creating moving images through various techniques. Adventure films often feature epic journeys. Comedy films are designed to make the audience laugh."
-        },
-        "Director": {
-            "Name": "Hayao Miyazaki",
-            "Bio": "Hayao Miyazak is a Japanese manga artist and prominent film director and animator of many popular anime feature films. Through a career that has spanned nearly five decades, Miyazaki has attained international acclaim as a maker of animated feature films and, along with Isao Takahata, co-founded Studio Ghibli, an animation studio and production company. The success of Miyazaki's films has invited comparisons with American animator Walt Disney, British animator Nick Park as well as Robert Zemeckis, who pioneered Motion Capture animation, and he has been named one of the most influential people by Time Magazine.",
-            "Birth": "1941"
-        },
-        "ImagePath": "Porco_Rosso_(Movie_Poster).jpg"
+    "Director": {
+        "Name": "Isao Takahata",
+        "Bio": "Isao Takahata was a Japanese director, screenwriter and producer. A co-founder of Studio Ghibli, he earned international critical acclaim for his work as a director of Japanese animated feature films.",
+        "Birth": "1935",
+        "Death": "2018"
     },
-    {
-        "_id": {"$oid":"652d434f6e015ed0a7bda12f"},
-        "Title": "Princess Mononoke",
-        "Year": "1997",
-        "Description": "On a journey to find the cure for a Tatarigami's curse, Ashitaka finds himself in the middle of a war between the forest gods and Tatara, a mining colony. In this quest he also meets San, the Mononoke Hime.",
-        "Genres": {
-            "Name": "Animation, Action, Adventure",
-            "Description": "This movie combines elements of animation, action, and adventure genres. Animation involves creating moving images through various techniques. Action films typically involve a series of events that include violence and physical feats. Adventure films often feature epic journeys."
-        },
-        "Director": {
-            "Name": "Hayao Miyazaki",
-            "Bio": "Hayao Miyazak is a Japanese manga artist and prominent film director and animator of many popular anime feature films. Through a career that has spanned nearly five decades, Miyazaki has attained international acclaim as a maker of animated feature films and, along with Isao Takahata, co-founded Studio Ghibli, an animation studio and production company. The success of Miyazaki's films has invited comparisons with American animator Walt Disney, British animator Nick Park as well as Robert Zemeckis, who pioneered Motion Capture animation, and he has been named one of the most influential people by Time Magazine.",
-            "Birth": "1941"
-        },
-        "ImagePath": "Princess_Mononoke_Japanese_poster.png"
+    "ImagePath": "OYpost.jpg"
+}
+{
+    "_id": {"$oid":"6526a7f4fc1510ad0e54c53b"},
+    "Title": "Whisper of the Heart",
+    "Year": "1995",
+    "Description": "A love story between a girl who loves reading books, and a boy who has previously checked out all of the library books she chooses.",
+    "Genres": {
+        "Name": "Animation, Drama, Family",
+        "Description": "This movie combines elements of animation, drama, and family genres. Animation involves creating moving images through various techniques. Drama films focus on emotional and relational development. Family films are designed to appeal to a wide range of ages and often contain elements suitable for younger viewers."
     },
-    {
-        "_id": {"$oid":"652d44376e015ed0a7bda131"},
-        "Title": "Spirited Away",
-        "Year": "2001",
-        "Description": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches and spirits, a world where humans are changed into beasts.",
-        "Genres": {
-            "Name": "Animation, Adventure, Family",
-            "Description": "This movie combines elements of animation, adventure, and family genres. Animation involves creating moving images through various techniques. Adventure films often feature epic journeys. Family films are designed to appeal to a wide range of ages and often contain elements suitable for younger viewers."
-        },
-        "Director": {
-            "Name": "Hayao Miyazaki",
-            "Bio": "Hayao Miyazak is a Japanese manga artist and prominent film director and animator of many popular anime feature films. Through a career that has spanned nearly five decades, Miyazaki has attained international acclaim as a maker of animated feature films and, along with Isao Takahata, co-founded Studio Ghibli, an animation studio and production company. The success of Miyazaki's films has invited comparisons with American animator Walt Disney, British animator Nick Park as well as Robert Zemeckis, who pioneered Motion Capture animation, and he has been named one of the most influential people by Time Magazine.",
-            "Birth": "1941"
-        },
-        "ImagePath": "Spirited_Away_Japanese_poster.png"
+    "Director": {
+        "Name": "Yoshifumi Kondō",
+        "Bio": "Yoshifumi Kondō was a Japanese animator who worked for Studio Ghibli in his last years.",
+        "Birth": "1950",
+        "Death": "1998"
     },
-    {
-        "_id": {"$oid":"652d44906e015ed0a7bda132"},
-        "Title": "Howl's Moving Castle",
-        "Year": "2004",
-        "Description": "When an unconfident young woman is cursed with an old body by a spiteful witch, her only chance of breaking the spell lies with a self-indulgent yet insecure young wizard and his companions in his legged, walking castle.",
-        "Genres": {
-            "Name": "Animation, Adventure, Family",
-            "Description": "This movie combines elements of animation, adventure, and family genres. Animation involves creating moving images through various techniques. Adventure films often feature epic journeys. Family films are designed to appeal to a wide range of ages and often contain elements suitable for younger viewers."
-        },
-        "Director": {
-            "Name": "Hayao Miyazaki",
-            "Bio": "Hayao Miyazak is a Japanese manga artist and prominent film director and animator of many popular anime feature films. Through a career that has spanned nearly five decades, Miyazaki has attained international acclaim as a maker of animated feature films and, along with Isao Takahata, co-founded Studio Ghibli, an animation studio and production company. The success of Miyazaki's films has invited comparisons with American animator Walt Disney, British animator Nick Park as well as Robert Zemeckis, who pioneered Motion Capture animation, and he has been named one of the most influential people by Time Magazine.",
-            "Birth": "1941"
-        },
-        "ImagePath": "Howls-moving-castleposter.jpg"
-    }
-]
+    "ImagePath": "Whisper_of_the_Heart_(Movie_Poster).jpg"
+}
+{
+    "_id": {"$oid":"6526a85ffc1510ad0e54c53f"},
+    "Title": "From Up on Poppy Hill",
+    "Year": "2011",
+    "Description": "A group of Yokohama teens look to save their school's clubhouse from the wrecking ball in preparations for the 1964 Tokyo Olympics.",
+    "Genres": {
+        "Name": "Animation, Comedy, Drama",
+        "Description": "This movie combines elements of animation, comedy, and drama genres. Animation involves creating moving images through various techniques. Comedy films are designed to make the audience laugh. Drama films focus on emotional and relational development."
+    },
+    "Director": {
+        "Name": "Gorō Miyazaki",
+        "Bio": "Goro Miyazaki is a Japanese director. He is the son of animator and film director Hayao Miyazaki, who is one of the co-founders of Studio Ghibli. Described as \"reluctant\" to follow his father's career, Goro initially worked as a landscaper for many years before entering the film business.",
+        "Birth": "1967"
+    },
+    "ImagePath": "From_Up_on_Poppy_Hill.png"
+}
+{
+    "_id": {"$oid":"652d3d6f6e015ed0a7bda12d"},
+    "Title": "Nausicaä of the Valley of the Wind",
+    "Year": "1984",
+    "Description": "Warrior and pacifist Princess Nausicaä desperately struggles to prevent two warring nations from destroying themselves and their dying planet.",
+    "Genres": {
+        "Name": "Animation, Adventure, Sci-Fi",
+        "Description": "This movie combines elements of animation, adventure, and science fiction genres. Animation involves creating moving images through various techniques. Adventure films often feature epic journeys. Science fiction typically deals with imaginative and futuristic concepts."
+    },
+    "Director": {
+        "Name": "Hayao Miyazaki",
+        "Bio": "Hayao Miyazak is a Japanese manga artist and prominent film director and animator of many popular anime feature films. Through a career that has spanned nearly five decades, Miyazaki has attained international acclaim as a maker of animated feature films and, along with Isao Takahata, co-founded Studio Ghibli, an animation studio and production company. The success of Miyazaki's films has invited comparisons with American animator Walt Disney, British animator Nick Park as well as Robert Zemeckis, who pioneered Motion Capture animation, and he has been named one of the most influential people by Time Magazine.",
+        "Birth": "1941"
+    },
+    "ImagePath": "Nausicaaposter.jpg"
+}
+{
+    "_id": {"$oid":"652d42e86e015ed0a7bda12e"},
+    "Title": "Porco Rosso",
+    "Year": "1992",
+    "Description": "In 1930s Italy, a veteran World War I pilot is cursed to look like an anthropomorphic pig.",
+    "Genres": {
+        "Name": "Animation, Adventure, Comedy",
+        "Description": "This movie combines elements of animation, adventure, and comedy genres. Animation involves creating moving images through various techniques. Adventure films often feature epic journeys. Comedy films are designed to make the audience laugh."
+    },
+    "Director": {
+        "Name": "Hayao Miyazaki",
+        "Bio": "Hayao Miyazak is a Japanese manga artist and prominent film director and animator of many popular anime feature films. Through a career that has spanned nearly five decades, Miyazaki has attained international acclaim as a maker of animated feature films and, along with Isao Takahata, co-founded Studio Ghibli, an animation studio and production company. The success of Miyazaki's films has invited comparisons with American animator Walt Disney, British animator Nick Park as well as Robert Zemeckis, who pioneered Motion Capture animation, and he has been named one of the most influential people by Time Magazine.",
+        "Birth": "1941"
+    },
+    "ImagePath": "Porco_Rosso_(Movie_Poster).jpg"
+}
+{
+    "_id": {"$oid":"652d434f6e015ed0a7bda12f"},
+    "Title": "Princess Mononoke",
+    "Year": "1997",
+    "Description": "On a journey to find the cure for a Tatarigami's curse, Ashitaka finds himself in the middle of a war between the forest gods and Tatara, a mining colony. In this quest he also meets San, the Mononoke Hime.",
+    "Genres": {
+        "Name": "Animation, Action, Adventure",
+        "Description": "This movie combines elements of animation, action, and adventure genres. Animation involves creating moving images through various techniques. Action films typically involve a series of events that include violence and physical feats. Adventure films often feature epic journeys."
+    },
+    "Director": {
+        "Name": "Hayao Miyazaki",
+        "Bio": "Hayao Miyazak is a Japanese manga artist and prominent film director and animator of many popular anime feature films. Through a career that has spanned nearly five decades, Miyazaki has attained international acclaim as a maker of animated feature films and, along with Isao Takahata, co-founded Studio Ghibli, an animation studio and production company. The success of Miyazaki's films has invited comparisons with American animator Walt Disney, British animator Nick Park as well as Robert Zemeckis, who pioneered Motion Capture animation, and he has been named one of the most influential people by Time Magazine.",
+        "Birth": "1941"
+    },
+    "ImagePath": "Princess_Mononoke_Japanese_poster.png"
+}
+{
+    "_id": {"$oid":"652d44376e015ed0a7bda131"},
+    "Title": "Spirited Away",
+    "Year": "2001",
+    "Description": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches and spirits, a world where humans are changed into beasts.",
+    "Genres": {
+        "Name": "Animation, Adventure, Family",
+        "Description": "This movie combines elements of animation, adventure, and family genres. Animation involves creating moving images through various techniques. Adventure films often feature epic journeys. Family films are designed to appeal to a wide range of ages and often contain elements suitable for younger viewers."
+    },
+    "Director": {
+        "Name": "Hayao Miyazaki",
+        "Bio": "Hayao Miyazak is a Japanese manga artist and prominent film director and animator of many popular anime feature films. Through a career that has spanned nearly five decades, Miyazaki has attained international acclaim as a maker of animated feature films and, along with Isao Takahata, co-founded Studio Ghibli, an animation studio and production company. The success of Miyazaki's films has invited comparisons with American animator Walt Disney, British animator Nick Park as well as Robert Zemeckis, who pioneered Motion Capture animation, and he has been named one of the most influential people by Time Magazine.",
+        "Birth": "1941"
+    },
+    "ImagePath": "Spirited_Away_Japanese_poster.png"
+}
+{
+    "_id": {"$oid":"652d44906e015ed0a7bda132"},
+    "Title": "Howl's Moving Castle",
+    "Year": "2004",
+    "Description": "When an unconfident young woman is cursed with an old body by a spiteful witch, her only chance of breaking the spell lies with a self-indulgent yet insecure young wizard and his companions in his legged, walking castle.",
+    "Genres": {
+        "Name": "Animation, Adventure, Family",
+        "Description": "This movie combines elements of animation, adventure, and family genres. Animation involves creating moving images through various techniques. Adventure films often feature epic journeys. Family films are designed to appeal to a wide range of ages and often contain elements suitable for younger viewers."
+    },
+    "Director": {
+        "Name": "Hayao Miyazaki",
+        "Bio": "Hayao Miyazak is a Japanese manga artist and prominent film director and animator of many popular anime feature films. Through a career that has spanned nearly five decades, Miyazaki has attained international acclaim as a maker of animated feature films and, along with Isao Takahata, co-founded Studio Ghibli, an animation studio and production company. The success of Miyazaki's films has invited comparisons with American animator Walt Disney, British animator Nick Park as well as Robert Zemeckis, who pioneered Motion Capture animation, and he has been named one of the most influential people by Time Magazine.",
+        "Birth": "1941"
+    },
+    "ImagePath": "Howls-moving-castleposter.jpg"
+}
 
