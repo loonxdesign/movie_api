@@ -35,7 +35,8 @@ app.use(express.urlencoded({ extended: true }));
 
 // Adding CORS
 const cors = require('cors');
-let allowedOrigins = ['http://localhost:8080', 'http://testsite.com'];
+app.use(cors());
+/* let allowedOrigins = ['http://localhost:8080', 'http://testsite.com'];
 
 app.use(
   cors({
@@ -52,6 +53,7 @@ app.use(
     },
   })
 );
+*/
 
 let auth = require('./auth')(app);
 const passport = require('passport');
