@@ -36,7 +36,7 @@ app.use(express.urlencoded({ extended: true }));
 // Adding CORS
 const cors = require('cors');
 app.use(cors());
-/* let allowedOrigins = ['http://localhost:8080', 'http://testsite.com'];
+let allowedOrigins = ['http://localhost:8080', 'http://testsite.com', 'http://localhost:1234', 'https://ghib-lix.netlify.app'];
 
 app.use(
   cors({
@@ -53,7 +53,7 @@ app.use(
     },
   })
 );
-*/
+
 
 let auth = require('./auth')(app);
 const passport = require('passport');
