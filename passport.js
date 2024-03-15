@@ -1,3 +1,7 @@
+/**
+ * Module for configuring Passport strategies
+ */
+
 const passport = require('passport'),
   LocalStrategy = require('passport-local').Strategy,
   Models = require('./models.js'),
@@ -7,6 +11,9 @@ let Users = Models.User,
   JWTStrategy = passportJWT.Strategy,
   ExtractJWT = passportJWT.ExtractJwt;
 
+/**
+ * Configuring LocalStrategy for username/password authentication
+ */
 passport.use(
   new LocalStrategy(
     {
@@ -40,6 +47,9 @@ passport.use(
   )
 );
 
+/**
+ * Configuring JWTStrategy for JSON Web Token authentication
+ */
 passport.use(
   new JWTStrategy(
     {

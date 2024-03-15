@@ -1,4 +1,6 @@
-// IMPORTS/BASICS
+/**
+ * Required modules for the server
+ */
 const express = require('express'),
   morgan = require('morgan'),
   fs = require('fs'),
@@ -22,7 +24,9 @@ mongoose.connect('mongodb://localhost:27017/test', {
 });
 */
 
-// ONLINE DATABASE
+/**
+ * Connect to the online MongoDB database
+ */
 mongoose.connect(process.env.CONNECTION_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -33,7 +37,9 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Adding CORS
+/**
+ * Middleware to allow Cross-Origin Resource Sharing (CORS)
+ */
 const cors = require('cors');
 app.use(cors());
 /* let allowedOrigins = ['http://localhost:8080', 'http://testsite.com', 'http://localhost:1234', 'https://ghib-lix.netlify.app'];
@@ -54,29 +60,41 @@ app.use(
   })
 ); */
 
-
+/**
+ * Authentication middleware
+ */
 let auth = require('./auth')(app);
 const passport = require('passport');
 require('./passport');
 
-// a ‘log.txt’ file is created in root directory
+/**
+ * Create a log file in the root directory
+ */
 const accessLogStream = fs.createWriteStream(path.join(__dirname, 'log.txt'), {
   flags: 'a',
 });
 
-// Morgan log all requests
+/**
+ * Log all requests using Morgan
+ */
 app.use(morgan('combined', { stream: accessLogStream }));
 
-// Serving Static Files
+/**
+ * Serve static files from the 'public' directory
+ */
 app.use(express.static('public'));
 
-// Return Welcome Page
+/**
+ * Welcome page route
+ */
 app.get('/', (req, res) => {
   res.send('Welcome to myFlix!');
 });
 
 // QUERYING MOVIES
-// Get ALL movies
+/**
+ * Endpoint to retrieve all movies
+ */
 app.get(
   '/movies',
   passport.authenticate('jwt', { session: false }),
@@ -92,7 +110,9 @@ app.get(
   }
 );
 
-// Get movie by title
+/**
+ * Endpoint to retrieve a movie by its title
+ */
 app.get(
   '/movies/:Title',
   passport.authenticate('jwt', { session: false }),
@@ -113,7 +133,9 @@ app.get(
   }
 );
 
-// Get movies by genre name
+/**
+ * Endpoint to retrieve movies by genre name
+ */
 app.get(
   '/movies/genres/:genresName',
   passport.authenticate('jwt', { session: false }),
@@ -139,7 +161,9 @@ app.get(
   }
 );
 
-// Get movies by director name
+/**
+ * Endpoint to retrieve movies by director name
+ */
 app.get(
   '/movies/director/:directorName',
   passport.authenticate('jwt', { session: false }),
@@ -165,7 +189,9 @@ app.get(
   }
 );
 
-// Get data about a director by name
+/**
+ * Endpoint to retrieve data about a director by name
+ */
 app.get(
   '/directors/:directorName',
   passport.authenticate('jwt', { session: false }),
@@ -188,7 +214,9 @@ app.get(
 );
 
 // QUERYING USERS
-// Get all users
+/**
+ * Endpoint to retrieve all users
+ */
 app.get(
   '/users',
   passport.authenticate('jwt', { session: false }),
@@ -204,7 +232,9 @@ app.get(
   }
 );
 
-// Get a user by username
+/**
+ * Endpoint to retrieve a user by username
+ */
 app.get(
   '/users/:Username',
   passport.authenticate('jwt', { session: false }),
@@ -226,7 +256,9 @@ app.get(
   }
 );
 
-// Allow new users to register
+/**
+ * Endpoint to allow new users to register
+ */
 app.post(
   '/users',
   [
@@ -273,7 +305,9 @@ app.post(
   }
 );
 
-// Update a user's info by username NEW
+/**
+ * Endpoint to update a user's info by username
+ */
 app.put(
   '/users/:Username',
   passport.authenticate('jwt', { session: false }),
@@ -311,13 +345,14 @@ app.put(
       })
       .catch((err) => {
         console.error(err);
-        res.status(500).send("Error: " + err);
+        res.status(500).send('Error: ' + err);
       });
   }
 );
 
-
-// Add a movie to a user's list of favorites
+/**
+ * Endpoint to add a movie to a user's list of favorites
+ */
 app.post(
   '/users/:Username/movies/:MovieID',
   passport.authenticate('jwt', { session: false }),
@@ -339,7 +374,9 @@ app.post(
   }
 );
 
-// Remove a movie from their list of favourites
+/**
+ * Endpoint to remove a movie from their list of favourites
+ */
 app.delete(
   '/users/:Username/movies/:MovieID',
   passport.authenticate('jwt', { session: false }),
@@ -361,7 +398,9 @@ app.delete(
   }
 );
 
-// Delete a user by username
+/**
+ * Endpoint to delete a user by username
+ */
 app.delete(
   '/users/:Username',
   passport.authenticate('jwt', { session: false }),
@@ -381,14 +420,18 @@ app.delete(
   }
 );
 
-// Error Handling
+/**
+ * Error handling middleware
+ */
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).send('Something broke!');
 });
 
-// listen for requests
+/**
+ * Start listening for requests on the specified port
+ */
 const port = process.env.PORT || 8080;
-app.listen(port, '0.0.0.0',() => {
- console.log('Listening on Port ' + port);
+app.listen(port, '0.0.0.0', () => {
+  console.log('Listening on Port ' + port);
 });
